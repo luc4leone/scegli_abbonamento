@@ -247,6 +247,14 @@ ul ul {
   min-height: 420px;
 }
 
+.plan--v3[data-plan-id="1m"][data-has-extra="true"] .divider--after-base {
+  margin-top: auto;
+}
+
+.plan--v3[data-plan-id="1m"][data-has-extra="true"] .plan__bottom {
+  margin-top: 0;
+}
+
 .plan--v3 .plan__top {
   text-align: center;
 }

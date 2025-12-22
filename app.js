@@ -109,15 +109,19 @@ function renderPlans() {
     const plan = PLANS.find((p) => p.id === planId);
     if (!plan) return;
 
+    const isV3 = planEl.classList.contains("plan--v3");
     const totals = computePlanTotals(plan, state.disciplines);
 
     const priceEl = planEl.querySelector('[data-role="price"]');
-    if (priceEl) priceEl.textContent = formatEuro(totals.price);
+    if (priceEl)
+      priceEl.textContent = formatEuro(
+        isV3 ? plan.baseDiscounted : totals.price
+      );
 
     const totalEl = planEl.querySelector('[data-role="total"]');
     if (totalEl) totalEl.textContent = formatEuro(totals.price);
 
-    if (planEl.classList.contains("plan--v3")) {
+    if (isV3) {
       const extraSection = planEl.querySelector('[data-role="extra-section"]');
       const totalSection = planEl.querySelector('[data-role="total-section"]');
       const dividers = planEl.querySelectorAll('[data-role="divider"]');
@@ -156,7 +160,9 @@ function renderPlans() {
 
     const strikedEl = planEl.querySelector('[data-role="striked"]');
     if (strikedEl) {
-      strikedEl.textContent = formatEuro(totals.striked);
+      strikedEl.textContent = formatEuro(
+        isV3 ? plan.baseUndiscounted : totals.striked
+      );
       strikedEl.style.display =
         plan.baseUndiscounted === plan.baseDiscounted ? "none" : "block";
     }
@@ -170,7 +176,13 @@ function renderPlans() {
 
     const discountEl = planEl.querySelector('[data-role="discount"]');
     if (discountEl) {
-      discountEl.textContent = `Sconto ${totals.discountPct}%`;
+      const baseDiscountPct =
+        plan.baseUndiscounted > 0
+          ? Math.round((plan.baseSavings / plan.baseUndiscounted) * 100)
+          : 0;
+      discountEl.textContent = `Sconto ${
+        isV3 ? baseDiscountPct : totals.discountPct
+      }%`;
       discountEl.style.display =
         plan.baseUndiscounted === plan.baseDiscounted ? "none" : "block";
     }

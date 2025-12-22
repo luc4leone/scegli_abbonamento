@@ -152,14 +152,14 @@ ul ul {
 }
 
 .price__value {
-  font-size: 44px;
+  font-size: 28px;
   line-height: 1;
   font-weight: 700;
   letter-spacing: -0.03em;
 }
 
 .price__striked {
-  font-size: 18px;
+  font-size: 21px;
   color: var(--muted);
   text-decoration: line-through;
 }
@@ -293,7 +293,7 @@ ul ul {
 }
 
 .v3-extra__value {
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1;
@@ -318,7 +318,7 @@ ul ul {
 
 .v3-total__value {
   margin-top: 6px;
-  font-size: 38px;
+  font-size: 34px;
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1;
@@ -457,7 +457,7 @@ ul ul {
   }
 
   .total__value {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   .plan--v3 {
@@ -469,7 +469,7 @@ ul ul {
   }
 
   .v3-extra__value {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .v3-total__value {
@@ -483,6 +483,6 @@ ul ul {
   }
 
   .price__value {
-    font-size: 34px;
+    font-size: 28px;
   }
 }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototipi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header" style="text-align: left">
+        <h1 class="title">Prototipi della view "scegli abbonamento"</h1>
+        <p>Progetto Pound4Pound - 22 dicembre 2025</p>
+      </header>
+
+      <section aria-label="Lista prototipi">
+        <ul class="index-prototypes">
+          <li>
+            <a href="./abbonamento_v1.html">Prototipo 1</a>
+            <details>
+              <summary>ux</summary>
+              <ul>
+                <li>
+                  obiettivo 1: capire se "aggiungi extra disciplina" funziona
+                </li>
+                <li>
+                  obiettivo 2: capire se ho messo bene in evidenza la
+                  progressione dello sconto
+                </li>
+              </ul>
+            </details>
+            <details>
+              <summary>dettagli implementativi</summary>
+              <ul>
+                <li>Selezione di un solo piano (bottone "Seleziona")</li>
+                <li>
+                  Contatore discipline totali (1-4) con +40€/mese oltre la prima
+                </li>
+                <li>
+                  Aggiornamento dinamico prezzi e barrato su tutte le cards
+                </li>
+                <li>
+                  Risparmi in € costanti per piano; % sconto dinamica in base al
+                  barrato aggiornato
+                </li>
+                <li>
+                  CTA "Vai al pagamento" abilitata solo dopo selezione (alert di
+                  riepilogo)
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a href="./abbonamento_v2.html">Prototipo 2</a>
+            <details>
+              <summary>ux</summary>
+              <ul>
+                <li>
+                  obiettivo 1: sostituito il contatore "aggiungi disciplina" con
+                  un controllo più mobile friendly (non sono convinto)
+                </li>
+                <li>
+                  obiettivo 2: cambiata la card per rendere più trasperante il
+                  calcolo del costo delle extra discipline
+                </li>
+              </ul>
+            </details>
+            <details>
+              <summary>dettagli implementativi</summary>
+              <ul>
+                <li>
+                  Selettore discipline (1-4) dentro ogni card, ma con stato
+                  globale
+                </li>
+                <li>
+                  Totale per card sempre visibile; bottone "Acquista" per ogni
+                  piano (alert di riepilogo)
+                </li>
+                <li>
+                  Aggiornamento prezzi e barrato + meta (risparmi e % sconto)
+                  quando cambiano le discipline
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a href="./abbonamento_v3.html">Prototipo 3</a>
+            <details>
+              <summary>ux</summary>
+              <ul>
+                <li>
+                  obiettivo 1: tento di esplicitare meglio i calcoli del costo
+                  delle extra discipline (PER EVITARE CARICO COGNITIVO ALLO
+                  USER)
+                </li>
+              </ul>
+            </details>
+            <details>
+              <summary>dettagli implementativi</summary>
+              <ul>
+                <li>Contatore globale extra discipline (0-3), default 0</li>
+                <li>
+                  Breakdown per piano: disciplina inclusa, extra discipline e
+                  totale
+                </li>
+                <li>
+                  Sezioni "extra" e "totale" (e separatori) visibili solo quando
+                  extra &gt; 0
+                </li>
+                <li>Bottone "Acquista" per piano (alert di riepilogo)</li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

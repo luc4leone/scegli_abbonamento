@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scegli abbonamento (v2)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <h1 class="title">Scegli abbonamento</h1>
+        <p class="subtitle">1 disciplina inclusa in tutti gli abbonamenti</p>
+      </header>
+
+      <section class="plans" aria-label="Piani di abbonamento">
+        <article
+          class="plan plan--v2"
+          data-plan-id="1m"
+          aria-label="Piano 1 mese"
+        >
+          <div class="plan__top">
+            <h2 class="plan__name">1 mese</h2>
+          </div>
+
+          <div class="plan__prices">
+            <div class="plan__price">
+              <span class="price__value" data-role="price">80€</span>
+            </div>
+          </div>
+
+          <div class="plan__picker" aria-label="Discipline">
+            <div class="picker" data-role="discipline-picker">
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="1"
+              >
+                1
+              </button>
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="2"
+              >
+                2
+              </button>
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="3"
+              >
+                3
+              </button>
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="4"
+              >
+                4
+              </button>
+            </div>
+
+            <div class="picker__label">Discipline</div>
+            <div class="picker__subtitle">
+              +40€/mese x disciplina oltre la prima
+            </div>
+          </div>
+
+          <div class="plan__total" aria-label="Totale">
+            <div class="total__value" data-role="total">80€</div>
+            <div class="total__label">Totale</div>
+          </div>
+
+          <div class="plan__bottom">
+            <button class="btn btn--ghost" type="button" data-role="buy">
+              Acquista
+            </button>
+          </div>
+        </article>
+
+        <article
+          class="plan plan--v2"
+          data-plan-id="3m"
+          aria-label="Piano 3 mesi"
+        >
+          <div class="plan__top">
+            <h2 class="plan__name">3 mesi</h2>
+          </div>
+
+          <div class="plan__prices">
+            <div class="plan__price">
+              <span class="price__value" data-role="price">200€</span>
+              <span class="price__striked" data-role="striked">240€</span>
+            </div>
+            <div class="plan__meta">
+              <div class="meta__row" data-role="savings">Risparmi 40€</div>
+              <div class="meta__row" data-role="discount">Sconto 16%</div>
+            </div>
+          </div>
+
+          <div class="plan__picker" aria-label="Discipline">
+            <div class="picker" data-role="discipline-picker">
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="1"
+              >
+                1
+              </button>
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="2"
+              >
+                2
+              </button>
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="3"
+              >
+                3
+              </button>
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="4"
+              >
+                4
+              </button>
+            </div>
+
+            <div class="picker__label">Discipline</div>
+            <div class="picker__subtitle">
+              +40€/mese x disciplina oltre la prima
+            </div>
+          </div>
+
+          <div class="plan__total" aria-label="Totale">
+            <div class="total__value" data-role="total">200€</div>
+            <div class="total__label">Totale</div>
+          </div>
+
+          <div class="plan__bottom">
+            <button class="btn btn--ghost" type="button" data-role="buy">
+              Acquista
+            </button>
+          </div>
+        </article>
+
+        <article
+          class="plan plan--v2"
+          data-plan-id="6m"
+          aria-label="Piano 6 mesi"
+        >
+          <div class="plan__top">
+            <h2 class="plan__name">6 mesi</h2>
+          </div>
+
+          <div class="plan__prices">
+            <div class="plan__price">
+              <span class="price__value" data-role="price">380€</span>
+              <span class="price__striked" data-role="striked">480€</span>
+            </div>
+            <div class="plan__meta">
+              <div class="meta__row" data-role="savings">Risparmi 100€</div>
+              <div class="meta__row" data-role="discount">Sconto 21%</div>
+            </div>
+          </div>
+
+          <div class="plan__picker" aria-label="Discipline">
+            <div class="picker" data-role="discipline-picker">
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="1"
+              >
+                1
+              </button>
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="2"
+              >
+                2
+              </button>
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="3"
+              >
+                3
+              </button>
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="4"
+              >
+                4
+              </button>
+            </div>
+
+            <div class="picker__label">Discipline</div>
+            <div class="picker__subtitle">
+              +40€/mese x disciplina oltre la prima
+            </div>
+          </div>
+
+          <div class="plan__total" aria-label="Totale">
+            <div class="total__value" data-role="total">380€</div>
+            <div class="total__label">Totale</div>
+          </div>
+
+          <div class="plan__bottom">
+            <button class="btn btn--ghost" type="button" data-role="buy">
+              Acquista
+            </button>
+          </div>
+        </article>
+
+        <article
+          class="plan plan--v2"
+          data-plan-id="12m"
+          aria-label="Piano 12 mesi"
+        >
+          <div class="plan__badge" aria-hidden="true">Maggior risparmio</div>
+
+          <div class="plan__top">
+            <h2 class="plan__name">12 mesi</h2>
+          </div>
+
+          <div class="plan__prices">
+            <div class="plan__price">
+              <span class="price__value" data-role="price">720€</span>
+              <span class="price__striked" data-role="striked">960€</span>
+            </div>
+            <div class="plan__meta">
+              <div class="meta__row" data-role="savings">Risparmi 240€</div>
+              <div class="meta__row" data-role="discount">Sconto 25%</div>
+            </div>
+          </div>
+
+          <div class="plan__picker" aria-label="Discipline">
+            <div class="picker" data-role="discipline-picker">
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="1"
+              >
+                1
+              </button>
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="2"
+              >
+                2
+              </button>
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="3"
+              >
+                3
+              </button>
+              <button
+                class="picker__item"
+                type="button"
+                data-role="discipline-option"
+                data-value="4"
+              >
+                4
+              </button>
+            </div>
+
+            <div class="picker__label">Discipline</div>
+            <div class="picker__subtitle">
+              +40€/mese x disciplina oltre la prima
+            </div>
+          </div>
+
+          <div class="plan__total" aria-label="Totale">
+            <div class="total__value" data-role="total">720€</div>
+            <div class="total__label">Totale</div>
+          </div>
+
+          <div class="plan__bottom">
+            <button class="btn btn--ghost" type="button" data-role="buy">
+              Acquista
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
